@@ -6,5 +6,6 @@ import Contact from "./Contact";
 import Posts from "./Posts";
 import Login from "./Login";
 import Register from "./Register";
+import Logo from "./Logo";
 
-export { Header, Footer, Home, About, Contact, Posts, Login, Register };
+export { Header, Footer, Home, About, Contact, Posts, Login, Register, Logo };
