@@ -44,7 +44,7 @@ function Header() {
                     } duration-200`
                   }
                 >
-                  About Us
+                  About Me
                 </NavLink>
               </li>
               <li>
@@ -56,7 +56,7 @@ function Header() {
                     } duration-200`
                   }
                 >
-                  Contact Us
+                  Contact Me
                 </NavLink>
               </li>
               <li>

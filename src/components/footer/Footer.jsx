@@ -41,7 +41,7 @@ function Footer() {
                     }
                     to="/about"
                   >
-                    About Us
+                    About Me
                   </NavLink>
                 </li>
               </ul>

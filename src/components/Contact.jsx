@@ -1,6 +1,8 @@
 import React from "react";
+import useForm from "react-hook-form";
 
 function Contact() {
+  const { register, handleSubmit } = useForm();
   return (
     <>
       <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-4">
@@ -50,6 +52,9 @@ function Contact() {
                         focus-visible:shadow-none
                         focus:border-primary
                         "
+                      {...register("name", {
+                        required: true,
+                      })}
                     />
                   </div>
                   <div className="mb-6">
@@ -67,25 +72,14 @@ function Contact() {
                         focus-visible:shadow-none
                         focus:border-primary
                         "
+                      {...register("email", {
+                        required: true,
+                        pattern:
+                          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                      })}
                     />
                   </div>
-                  <div className="mb-6">
-                    <input
-                      type="text"
-                      placeholder="Your Phone"
-                      className="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
-                        "
-                    />
-                  </div>
+
                   <div className="mb-6">
                     <textarea
                       rows="6"
@@ -102,6 +96,9 @@ function Contact() {
                         focus-visible:shadow-none
                         focus:border-primary
                         "
+                      {...register("message", {
+                        required: true,
+                      })}
                     ></textarea>
                   </div>
                   <div>
