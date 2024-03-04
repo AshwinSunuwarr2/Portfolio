@@ -1,7 +1,10 @@
 import React from "react";
-import useForm from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 function Contact() {
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   const { register, handleSubmit } = useForm();
   return (
     <>
@@ -36,7 +39,7 @@ function Contact() {
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-                <form>
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mb-6">
                     <input
                       type="text"
@@ -120,7 +123,18 @@ function Contact() {
                     </button>
                   </div>
                 </form>
-                <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Contact;
+{
+  /* <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg
                       width="100"
@@ -928,13 +942,5 @@ function Contact() {
                     </svg>
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+                 */
 }
-
-export default Contact;
