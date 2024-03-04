@@ -1,33 +1,40 @@
+const express = require('express');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
-// Function to send email
-const sendEmail = async (name, email, message) => {
-  // Create a transporter using SMTP transport
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.example.com', // Your SMTP host
-    port: 587, // Your SMTP port
-    secure: false, // Set to true if using SSL/TLS
-    auth: {
-      user: 'your_email@example.com', // Your email address
-      pass: 'your_password' // Your email password
-    }
-  });
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-  // Email message options
-  let mailOptions = {
-    from: 'your_email@example.com', // Sender's email address
-    to: 'admin@gmail.com', // Receiver's email address
-    subject: 'New message from contact form',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-  };
+app.use(bodyParser.json());
+
+app.post('/send-email', async (req, res) => {
+  const { name, email, message } = req.body;
 
   try {
-    // Send email
-    let info = await transporter.sendMail(mailOptions);
-    console.log('Email sent: ', info.messageId);
-  } catch (error) {
-    console.error('Error sending email: ', error);
-  }
-};
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        user: 'ashwin.181209@ncit.edu.np', // Your Gmail address
+        pass: 'Ncit@123', // Your Gmail password
+      },
+    });
 
-module.exports = sendEmail;
+    const mailOptions = {
+      from: email,
+      to: 'afinsunuwarr2@gmail.com',
+      subject: 'New Message from Contact Form',
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully!');
+    res.sendStatus(200);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.sendStatus(500);
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
