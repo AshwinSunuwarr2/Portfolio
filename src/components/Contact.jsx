@@ -1,10 +1,32 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Email from "emailjs-com";
 
 function Contact() {
+
+
   const onSubmit = (data) => {
-    console.log(data);
+    const { name, email, message } = data;
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    Email.send(
+      "service_v2zotr6",
+      "template_uujtunj",
+      templateParams,
+      "1sUJxJm4ECJH5zIya"
+    )
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+      })
+      .catch((error) => {
+        console.error("Error occurred while sending email:", error);
+      });
   };
+
   const { register, handleSubmit } = useForm();
   return (
     <>
@@ -122,19 +144,7 @@ function Contact() {
                       Send Message
                     </button>
                   </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-
-export default Contact;
-{
-  /* <div>
+                  <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg
                       width="100"
@@ -144,8 +154,8 @@ export default Contact;
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                         fill="#3056D3"
                       />
@@ -942,5 +952,18 @@ export default Contact;
                     </svg>
                   </span>
                 </div>
-                 */
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </>
+  );
 }
+
+export default Contact;
+ 
+                 
+
