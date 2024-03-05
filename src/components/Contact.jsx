@@ -1,10 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Email from "emailjs-com";
+import {useNavigate} from "react-router-dom"
 
 function Contact() {
 
-
+  const navigate = useNavigate();
   const onSubmit = (data) => {
     const { name, email, message } = data;
     const templateParams = {
@@ -21,10 +22,12 @@ function Contact() {
     )
       .then((response) => {
         console.log("Email sent successfully:", response);
+        navigate("/thankyou");
       })
       .catch((error) => {
         console.error("Error occurred while sending email:", error);
       });
+
   };
 
   const { register, handleSubmit } = useForm();

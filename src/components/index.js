@@ -7,5 +7,6 @@ import Posts from "./Posts";
 import Login from "./Login";
 import Register from "./Register";
 import Logo from "./Logo";
+import FormSubmissionPage from "./FormSubmissionPage";
 
-export { Header, Footer, Home, About, Contact, Posts, Login, Register, Logo };
+export { Header, Footer, Home, About, Contact, Posts, Login, Register, Logo, FormSubmissionPage };

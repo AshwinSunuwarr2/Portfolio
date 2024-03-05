@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="h-screen bg-gray-50 flex items-center">
       <section className="w-full bg-cover bg-center py-32 bg-[url(https://source.unsplash.com/random)]">
@@ -10,12 +12,12 @@ function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
             euismod odio, gravida pellentesque urna varius vitae.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/contact"
             className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
           >
             Connect
-          </a>
+          </Link>
         </div>
       </section>
     </div>

@@ -68,26 +68,13 @@ function Header() {
                     } duration-200`
                   }
                 >
-                  Posts
+                  Experience
                 </NavLink>
               </li>
             </ul>
 
             <div>
-              {/* <nav className="flex gap-4">
-              <Link
-                to="/login"
-                className="bg-gray-500 text-white px-4 py-2 rounded shadow-inner shadow-white/50 hover:text-blue-400"
-              >
-                Login
-              </Link>
-              <Link
-                to="/register"
-                className="bg-gray-500 text-white px-4 py-2 rounded shadow-inner shadow-white/50 hover:text-red-400"
-              >
-                Register
-              </Link>
-            </nav> */}
+              
 
               {/* socials-------- */}
 
