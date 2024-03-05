@@ -27,9 +27,9 @@ function Header() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `hover:text-green-400 ${
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ? "text-green-500" : "text-black"
-                    } duration-200`
+                    } `
                   }
                 >
                   Home
@@ -39,9 +39,9 @@ function Header() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `hover:text-green-400 ${
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ? "text-green-500" : "text-black"
-                    } duration-200`
+                    } `
                   }
                 >
                   About Me
@@ -51,9 +51,9 @@ function Header() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `hover:text-green-400 ${
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ? "text-green-500" : "text-black"
-                    } duration-200`
+                    } `
                   }
                 >
                   Contact Me
@@ -63,16 +63,22 @@ function Header() {
                 <NavLink
                   to="/posts"
                   className={({ isActive }) =>
-                    `hover:text-green-400 ${
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ? "text-green-500" : "text-black"
-                    } duration-200`
+                    } `
                   }
                 >
                   Experience
                 </NavLink>
               </li>
             </ul>
+          
+{/* <main class="h-screen flex justify-center items-center">
+	<p
+		class="relative inline cursor-pointer text-xl font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">
+		Hover me</p>
 
+</main> */}
             <div>
               
 
