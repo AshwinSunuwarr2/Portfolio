@@ -28,7 +28,7 @@ function Header() {
                   to="/"
                   className={({ isActive }) =>
                     `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-green-500" : "text-black"
+                      isActive ? "text-[#742dee84]" : "text-black"
                     } `
                   }
                 >
@@ -40,7 +40,7 @@ function Header() {
                   to="/about"
                   className={({ isActive }) =>
                     `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-green-500" : "text-black"
+                      isActive ? "text-[#742dee84]" : "text-black"
                     } `
                   }
                 >
@@ -52,7 +52,7 @@ function Header() {
                   to="/contact"
                   className={({ isActive }) =>
                     `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-green-500" : "text-black"
+                      isActive ? "text-[#742dee84]" : "text-black"
                     } `
                   }
                 >
@@ -64,7 +64,7 @@ function Header() {
                   to="/posts"
                   className={({ isActive }) =>
                     `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-green-500" : "text-black"
+                      isActive ? "text-[#742dee84]" : "text-black"
                     } `
                   }
                 >
