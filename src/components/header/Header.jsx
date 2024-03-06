@@ -90,7 +90,7 @@ function Header() {
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
-                    window.open("https://www.instagram.com/ashwinsunuwar/")
+                    window.open("https://www.instagram.com/ahwinsunuwar/")
                   }
                 >
                   <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">

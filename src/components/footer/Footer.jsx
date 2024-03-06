@@ -3,8 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../index";
 import {
   PiInstagramLogoLight,
-  PiLinkedinLogo,
-  PiGithubLogoLight,
 } from "react-icons/pi";
 
 import { SiGmail } from "react-icons/si";
@@ -23,9 +21,9 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `hover:text-green-400 ${
+                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100  ${
                         isActive ? "text-green-500" : "text-black"
-                      } duration-200`
+                      }`
                     }
                     to="/"
                   >
@@ -35,9 +33,9 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `hover:text-green-400 ${
+                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                         isActive ? "text-green-500" : "text-black"
-                      } duration-200`
+                      }`
                     }
                     to="/about"
                   >
@@ -72,7 +70,7 @@ function Footer() {
                 type="button"
                 data-ripple-light="true"
                 onClick={() =>
-                  window.open("https://www.instagram.com/ashwinsunuwar/")
+                  window.open("https://www.instagram.com/ahwinsunuwar/")
                 }
               >
                 <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">

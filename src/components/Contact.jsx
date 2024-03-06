@@ -39,7 +39,7 @@ function Contact() {
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0 m-auto">
                 <span className="block mb-4 text-base text-primary font-semibold">
-                  Contact Us
+                  Contact Me
                 </span>
                 <h2
                   className="
@@ -53,7 +53,7 @@ function Contact() {
                   xl:text-[40px]
                   "
                 >
-                  GET IN TOUCH WITH US
+                  GET IN TOUCH WITH ME
                 </h2>
                 <p className="text-base text-body-color leading-relaxed mb-9">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
