@@ -11,9 +11,9 @@ import {
 import { SiGmail } from "react-icons/si";
 function Header() {
   return (
-    <header>
+    <header className="sticky top-0">
       <nav>
-        <div className="flex justify-between items-center bg-pink-800/10 px-2">
+        <div className="flex justify-between items-center bg-[#e6d38c] px-2">
           <Link
             to="/"
             className="flex justify-center object-fill h-[75px] pl-4"

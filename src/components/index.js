@@ -9,6 +9,19 @@ import Register from "./Register";
 import Logo from "./Logo";
 import FormSubmissionPage from "./FormSubmissionPage";
 import HoverCard from "./HoverCard";
+import Edu from "./Edu";
 
-
-export { Header, Footer, Home, About, Contact, Posts, Login, Register, Logo, FormSubmissionPage, HoverCard };
+export {
+  Header,
+  Footer,
+  Home,
+  About,
+  Contact,
+  Posts,
+  Login,
+  Register,
+  Logo,
+  FormSubmissionPage,
+  HoverCard,
+  Edu,
+};

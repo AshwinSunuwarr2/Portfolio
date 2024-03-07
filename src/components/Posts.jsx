@@ -1,5 +1,5 @@
 import React from "react";
-import HoverCard from "./HoverCard"
+import Edu from "./Edu"
 
 function Posts() {
   return (
@@ -41,7 +41,7 @@ function Posts() {
 
 {/*----- edu -----*/}
       <div className="flex flex-wrap p-6 m-auto">
-        <HoverCard/>
+        <Edu/>
       </div>
     </div>
   );

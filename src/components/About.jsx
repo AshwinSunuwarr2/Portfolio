@@ -38,7 +38,7 @@ function About() {
                     aria-label=""
                     className="group inline-flex items-center font-semibold text-g1"
                   >
-                    Watch how it works
+                    To my Acheivements
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2"
