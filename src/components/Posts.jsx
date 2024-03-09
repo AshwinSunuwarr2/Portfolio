@@ -3,7 +3,7 @@ import Edu from "./Edu"
 
 function Posts() {
   return (
-    <div className="bg-gradient-to-r from-violet-300 to-pink-100 min-h-screen">
+    <div className=" min-h-screen overflow-y-auto bi-sliders2-vertical">
       <div className="projects">
         <ul>
           <li>

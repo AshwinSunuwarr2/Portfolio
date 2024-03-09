@@ -44,7 +44,8 @@ function Footer() {
                 </li>
               </ul>
             </nav>
-            <p>&copy; 2024 My Company. All rights reserved.</p>
+            <p>&copy; 2024 My Quirky Portfolio. Designed with ❤️ by Ashwin Sunuwar.</p>
+           
           </div>
           <div>
             {/* <nav className="flex gap-4">

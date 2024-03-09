@@ -5,6 +5,7 @@ function Edu() {
     <>
 <div className="w-full px-4 text-black">
 	<div className="tree-wrapper relative md:w-[10px] min-h-[50vh] md:mx-auto ">
+		<h2 className='text-3xl font-bold shadow-red-600 tracking-wider	subpixel-antialiased mb-8 min-w-max '>🎓 Education 🎓</h2>
 		<div
 			className="flex md:flex-row flex-col md:items-center md:gap-2 group  relative top-0 md:left-1/2 md:right-1/2 md:even:translate-x-[-100%] even:translate-x-0 md:w-max w-full z-[1]">
 			<div
@@ -16,8 +17,7 @@ function Edu() {
 				<div className="location">Balkumari, Lalitpur</div>
 				<div className="starting-year">2018</div>
 				<div className="graduation-year">2023</div>
-				<div className="description">It was four years journey of my educational life at NCIT and i
-					tried to gather computer related knowledge as much as i can in this short period of time.</div>
+				<div className="description">I have gathered as much computer-related knowledge as possible within this short period of time.</div>
 				<div className="result"></div>
 			</div>
 		</div>
@@ -32,8 +32,7 @@ function Edu() {
 				<div className="location">Balkumari, Lalitpur</div>
 				<div className="starting-year">2016</div>
 				<div className="graduation-year">2018</div>
-				<div className="description">Its a short journey of my educational life in the Milestone Int'l College and i
-					tried to make best use of time in this short period.</div>
+				<div className="description">I chosen Science as my subject randomly. Later, I started to get interested in techie stuff.</div>
 				<div className="result"></div>
 			</div>
 		</div>
@@ -48,7 +47,7 @@ function Edu() {
 				<div className="location">Madhi Bazar 2, Sindhuli</div>
 				<div className="starting-year">2005</div>
 				<div className="graduation-year">2015</div>
-				<div className="description">School life gave the initial opportunity to me to learn and grow but the struggle was real during this period.</div>
+				<div className="description">School life was normal.</div>
 				<div className="result"></div>
 			</div>
 		</div>

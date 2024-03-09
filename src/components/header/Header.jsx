@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-[999]">
       <nav>
-        <div className="flex justify-between items-center bg-[#e6d38c] px-2">
+        <div className="flex justify-between items-center bg-[#e6d38c84] px-2 backdrop-blur-md">
           <Link
             to="/"
             className="flex justify-center object-fill h-[75px] pl-4"
