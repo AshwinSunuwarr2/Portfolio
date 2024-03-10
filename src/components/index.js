@@ -10,6 +10,7 @@ import Logo from "./Logo";
 import FormSubmissionPage from "./FormSubmissionPage";
 import HoverCard from "./HoverCard";
 import Edu from "./Edu";
+import Projects from "./Projects";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   FormSubmissionPage,
   HoverCard,
   Edu,
+  Projects
 };
