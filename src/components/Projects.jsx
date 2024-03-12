@@ -31,7 +31,7 @@ function Projects() {
                     <div className="p-6">
                         <h3 className="text-2xl font-bold mb-4">eBilling</h3>
                         <p className="text-gray-700">This project was the minor project that effectively implemented the CRUD operation on a database.</p>
-                        <a href="#" className="block text-blue-600 hover:underline mt-4">Check on GitHub! 🚀</a>
+                        <a href="#" className="block text-gray-400 mt-4 cursor-not-allowed" >Check on GitHub! 🚀</a>
                     </div>
                 </div>
 
