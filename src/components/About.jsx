@@ -1,5 +1,6 @@
 import React from "react";
 import me from "../assets/images/me.png";
+import "./compo.css"
 
 function About() {
   return (
@@ -16,13 +17,13 @@ function About() {
               </div>
               <div className="lg:max-w-xl lg:pr-5 relative z-40">
                 <p className="flex text-sm uppercase text-g1  ">About Me</p>
-                <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
-                  I can make you look
+                <h2 className="mb-6 max-w-lg text-xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug bg-red-100">
+                  Transforming visions into{" "}
                   <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">
-                    different
+                    reality
                   </span>
                 </h2>
-                <p className="text-base text-gray-700">
+                <p className="text-base text-gray-700 ">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque it.
                 </p>
@@ -57,8 +58,8 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">
-              <svg
+            <div className="relative lg:ml-32 lg:block lg:w-1/2 order-[-1] lg:order-[1]">
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden"
                 fill="none"
@@ -71,9 +72,9 @@ function About() {
                   stroke-linejoin="round"
                   d="M16 17l-4 4m0 0l-4-4m4 4V3"
                 ></path>
-              </svg>
-              <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                <img src={me} alt="err" />
+              </svg> */}
+              <div className="pngclass mx-auto w-fit overflow-hidden rounded-[20%] rounded-br-none rounded-tl-none">
+                <img src={me} alt="err" className="mypngimage"/>
               </div>
             </div>
           </div>

@@ -21,8 +21,8 @@ function Header() {
             <Logo width="250px" />
           </Link>
 
-          <div className="flex flex-row justify-around w-full">
-            <ul className="hidden md:flex justify-center items-center gap-8">
+          <div className="flex flex-row justify-evenly w-full">
+            <ul className="hidden md:flex flex-row content-end items-end gap-6 lg:gap-8">
               <li>
                 <NavLink
                   to="/"
@@ -44,7 +44,7 @@ function Header() {
                     } `
                   }
                 >
-                  About Me
+                  About
                 </NavLink>
               </li>
               <li>
@@ -56,7 +56,7 @@ function Header() {
                     } `
                   }
                 >
-                  Contact Me
+                  Contact
                 </NavLink>
               </li>
               <li>
@@ -86,7 +86,7 @@ function Header() {
 
               <div className="hidden md:flex gap-3">
                 <button
-                  className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -98,7 +98,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -110,7 +110,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -124,7 +124,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>

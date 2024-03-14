@@ -16,7 +16,7 @@ function Home() {
             to="/contact"
             className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
           >
-            Connect
+            Hire me!
           </Link>
         </div>
       </section>
