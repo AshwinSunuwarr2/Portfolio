@@ -13,15 +13,15 @@ function Header() {
   return (
     <header className="sticky top-0 z-[999]">
       <nav>
-        <div className="flex justify-between items-center bg-gray-300/80 px-2 backdrop-blur-md">
+        <div className="flex justify-around items-center bg-white/75 px-2 backdrop-blur-md shadow-md h-24 m-auto">
           <Link
             to="/"
-            className="flex justify-center object-fill h-[75px] pl-4"
+            className="flex justify-center"
           >
-            <Logo width="250px" />
+            <Logo className="object-contain p-4" />
           </Link>
 
-          <div className="flex flex-row justify-evenly w-full">
+          <div className="flex flex-row justify-between sm:w-[90%] lg:w-[60%] ml-5">
             <ul className="hidden md:flex flex-row content-end items-end gap-6 lg:gap-8">
               <li>
                 <NavLink

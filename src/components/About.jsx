@@ -24,8 +24,8 @@ function About() {
                   </span>
                 </h2>
                 <p className="text-base text-gray-700 ">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque it.
+                Computer engineer who is passionate about technology and innovation. With a background in software development, I excel at solving complex problems and delivering high-quality results. <br/><br/>Committed to lifelong learning.
+                Eager to contribute to meaningful projects.
                 </p>
                 <div className="mt-10 flex flex-col items-center md:flex-row">
                   <a
