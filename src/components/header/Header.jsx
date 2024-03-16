@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-[999]">
       <nav>
-        <div className="flex justify-between items-center bg-[#e6d38c84] px-2 backdrop-blur-md">
+        <div className="flex justify-between items-center bg-gray-300/80 px-2 backdrop-blur-md">
           <Link
             to="/"
             className="flex justify-center object-fill h-[75px] pl-4"
@@ -27,8 +27,8 @@ function Header() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-[#742dee84]" : "text-black"
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                      isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
                 >
@@ -39,8 +39,8 @@ function Header() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-[#742dee84]" : "text-black"
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                      isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
                 >
@@ -51,8 +51,8 @@ function Header() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-[#742dee84]" : "text-black"
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                      isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
                 >
@@ -63,8 +63,8 @@ function Header() {
                 <NavLink
                   to="/posts"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                      isActive ? "text-[#742dee84]" : "text-black"
+                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                      isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
                 >
@@ -75,7 +75,7 @@ function Header() {
           
 {/* <main class="h-screen flex justify-center items-center">
 	<p
-		class="relative inline cursor-pointer text-xl font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">
+		class="relative inline cursor-pointer text-xl font-medium before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">
 		Hover me</p>
 
 </main> */}

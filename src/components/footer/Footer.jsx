@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 function Footer() {
   return (
     <footer>
-      <div className="flex flex-row items-center justify-between bg-pink-800/10 text-green-900/80 py-4 lg:pl-16 bg-ashwin">
+      <div className="flex flex-row items-center justify-between bg-gray-300/80 text-green-900/80 py-4 lg:pl-16 bg-ashwin">
         <Link to="/" className="flex justify-center m-2">
           <Logo width="150px" className="  object-cover drop-shadow-2xl" />
         </Link>
@@ -21,8 +21,8 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100  ${
-                        isActive ? "text-green-500" : "text-black"
+                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100  ${
+                        isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                       }`
                     }
                     to="/"
@@ -33,8 +33,8 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
-                        isActive ? "text-green-500" : "text-black"
+                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                        isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                       }`
                     }
                     to="/about"
