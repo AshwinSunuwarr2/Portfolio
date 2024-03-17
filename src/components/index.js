@@ -11,6 +11,7 @@ import FormSubmissionPage from "./FormSubmissionPage";
 import HoverCard from "./HoverCard";
 import Edu from "./Edu";
 import Projects from "./Projects";
+import Mobilemenu from "./header/Mobilemenu";
 
 export {
   Header,
@@ -25,5 +26,6 @@ export {
   FormSubmissionPage,
   HoverCard,
   Edu,
-  Projects
+  Projects,
+  Mobilemenu
 };
