@@ -12,11 +12,11 @@ function Footer() {
     <footer>
       <div className="flex flex-row items-center justify-between bg-white/75 text-green-900/80 py-4 lg:pl-16 shadow-t-sm shadow-inner shadow-black/15 ">
         <Link to="/" className="flex justify-center m-2">
-          <Logo width="150px" className="  object-cover drop-shadow-2xl" />
+          <Logo className="  object-contain p-4" />
         </Link>
-        <div className="flex flex-row w-[75%] justify-evenly items-center">
+        <div className="flex flex-col md:flex-row w-[85%] justify-evenly items-center">
           <div className="flex flex-col justify-center items-center">
-            <nav>
+            <nav className="hidden md:flex">
               <ul className="flex justify-end items-end p-4 gap-10">
                 <li>
                   <NavLink
@@ -44,30 +44,17 @@ function Footer() {
                 </li>
               </ul>
             </nav>
-            <p>&copy; 2024 My Quirky Portfolio. Designed with ❤️ by Ashwin Sunuwar.</p>
+            <p className="text-[14px] mt-2">&copy; 2024 My Quirky Portfolio. Designed with ❤️ by Ashwin Sunuwar.</p>
            
           </div>
           <div>
-            {/* <nav className="flex gap-4">
-              <Link
-                to="/login"
-                className="bg-gray-500 text-white px-4 py-2 rounded shadow-inner shadow-white/50 hover:text-blue-400"
-              >
-                Login
-              </Link>
-              <Link
-                to="/register"
-                className="bg-gray-500 text-white px-4 py-2 rounded shadow-inner shadow-white/50 hover:text-red-400"
-              >
-                Register
-              </Link>
-            </nav> */}
+          
 
             {/* socials-------- */}
 
-            <div className="hidden md:flex gap-3">
+            <div className="flex gap-3 mt-2 items-start justify-center">
               <button
-                className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-full bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
+                className="middle none relative h-10 max-h-[18px] w-10 max-w-[18px] p-5 rounded-full text-center font-sans text-xs font-medium uppercase text-red-600 shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                 type="button"
                 data-ripple-light="true"
                 onClick={() =>
@@ -80,7 +67,7 @@ function Footer() {
               </button>
 
               <button
-                className="middle none relative h-10 max-h-[40px] w-10 max-w-[40px] rounded-full bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="middle none relative h-10 max-h-[18px] w-10 max-w-[18px] p-5 rounded-full text-center font-sans text-xs font-medium uppercase text-orange-500 shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                 type="button"
                 data-ripple-light="true"
                 onClick={() => window.open("mailto:ashwinsunuwarr2@gmail.com")}

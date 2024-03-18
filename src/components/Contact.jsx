@@ -3,6 +3,14 @@ import { useForm } from "react-hook-form";
 import Email from "emailjs-com";
 import { useNavigate } from "react-router-dom";
 
+import {
+  PiInstagramLogoLight,
+  PiLinkedinLogo,
+  PiGithubLogoLight,
+} from "react-icons/pi";
+
+import { SiGmail } from "react-icons/si";
+
 function Contact() {
   const navigate = useNavigate();
   const onSubmit = (data) => {
@@ -90,6 +98,60 @@ function Contact() {
                   do eius tempor incididunt ut labore et dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
                 </p>
+                {/* socials-------- */}
+
+              <div className="md:hidden sm:flex gap-3">
+                <button
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                  type="button"
+                  data-ripple-light="true"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/ahwinsunuwar/")
+                  }
+                >
+                  <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                    <PiInstagramLogoLight size={30} />
+                  </span>
+                </button>
+                <button
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                  type="button"
+                  data-ripple-light="true"
+                  onClick={() =>
+                    window.open("https://github.com/AshwinSunuwarr2")
+                  }
+                >
+                  <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                    <PiGithubLogoLight size={30} />
+                  </span>
+                </button>
+                <button
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                  type="button"
+                  data-ripple-light="true"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/ashwin-sunuwar-648769229/"
+                    )
+                  }
+                >
+                  <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                    <PiLinkedinLogo size={30} />
+                  </span>
+                </button>
+                <button
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                  data-ripple-light="true"
+                  onClick={() =>
+                    window.open("mailto:ashwinsunuwarr2@gmail.com")
+                  }
+                >
+                  <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
+                    <SiGmail size={25} />
+                  </span>
+                </button>
+              </div>
               </div>
             </div>
             <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
