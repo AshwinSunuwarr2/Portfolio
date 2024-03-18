@@ -23,7 +23,7 @@ function Home() {
           <a
             href="ashwinCV.pdf"
             target="_blank"
-            className="max-w-[45px] bg-[#e21612d0] text-white py-4 px-12 rounded-full hover:bg-[#232a2fde] ml-2"
+            className="max-w-[45px] bg-[#e21612d0] text-white py-4 px-8 rounded-full hover:bg-[#232a2fde] ml-2"
             download
           >
             📩Download CV

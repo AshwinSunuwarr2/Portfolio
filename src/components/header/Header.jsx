@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../index";
+import Mobilemenu from "./Mobilemenu";
 
 import {
   PiInstagramLogoLight,
@@ -22,6 +23,9 @@ function Header() {
           </Link>
 
           <div className="flex flex-row justify-between sm:w-[90%] lg:w-[60%] ml-5">
+            <div className="md:hidden min-w-[250px]">
+              <Mobilemenu/>
+            </div>
             <ul className="hidden md:flex flex-row content-end items-end gap-6 lg:gap-8">
               <li>
                 <NavLink
