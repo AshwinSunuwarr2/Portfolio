@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Logo } from "../index";
 import Mobilemenu from "./Mobilemenu";
+import "./index"
 
 import {
   PiInstagramLogoLight,
@@ -17,7 +18,7 @@ function Header() {
         <div className="flex justify-around items-center bg-white/50 px-2 backdrop-blur-lg shadow-md h-24 m-auto">
           <Link
             to="/"
-            className="flex justify-center"
+            className="hidden sm:flex justify-center "
           >
             <Logo className="object-contain p-4" />
           </Link>
@@ -83,6 +84,7 @@ function Header() {
 		Hover me</p>
 
 </main> */}
+
             <div>
               
 

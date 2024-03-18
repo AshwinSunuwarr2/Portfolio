@@ -18,3 +18,4 @@ const holder = document.getElementsByClassName("below-menu-holder");
               activate();
           })
       }
+      activate();

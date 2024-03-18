@@ -12,14 +12,14 @@ function About() {
      
     <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         <div className="flex flex-col items-center justify-between lg:flex-row py-16">
-            <div className=" relative ">
+            <div className=" relative order-2 md:order-1">
                 <div className=" absolute top-0 -left-48 z-0  opacity-50 ">
                     <img src="https://source.unsplash.com/random" className="w-36 z-0  h-full    object-fill fill-y text-y   "/>
                 </div>
                 <div className="lg:max-w-xl lg:pr-5 relative z-40">
                     <p className="flex text-sm uppercase text-g1  ">
                          
-                        About Us
+                        About Me
                     </p>
                     <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-5xl sm:leading-snug">
                         I am Ashwin Sunuwar
@@ -41,18 +41,18 @@ function About() {
                 
                
             </div>
-            <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <div className="relative lg:ml-32 lg:block lg:w-1/2 order-1">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" className="my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
-                </svg>
-                <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[10rem] rounded-br-none rounded-tl-none">
-                     <img src={me} alt="" className="w-[400px] h-[500px] object-cover"/>
+                </svg> */}
+                <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[10rem] rounded-br-none rounded-tl-none m-2">
+                     <img src={me} alt="" className="size-[350px] md:w-[400px] md:h-[500px] object-cover"/>
                 </div>
             </div>
         </div>
     </div> 
     <div className="hidden text-9xl varien absolute top-6 left-1/4 text-g/10 z-40    ">
-        About Us
+        About Me
     </div>
     <div className=" absolute -bottom-24 left-10 z-0  opacity-10 "> 
         <svg width="800px" height="800px" viewBox="0 0 24 24" className="w-96 z-0  h-full    object-fill fill-gray-300 text-gray-300" fill="none" xmlns="http://www.w3.org/2000/svg">
