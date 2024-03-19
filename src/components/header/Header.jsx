@@ -74,7 +74,7 @@ function Header() {
                     } `
                   }
                 >
-                  Experience
+                  Work & Academics
                 </NavLink>
               </li>
             </ul>

@@ -76,9 +76,11 @@ function Contact() {
           <div className="flex flex-wrap lg:justify-between -mx-4">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0 m-auto">
-                <span className="block mb-4 text-base text-primary font-semibold animate-rtl1">
-                  Contact Me
-                </span>
+                
+                <p className="flex text-sm uppercase text-g1  animate-rtl1">
+                         
+                         Contact Me
+                     </p>
                 <h2
                   className="
                   text-dark
