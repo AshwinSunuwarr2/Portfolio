@@ -163,9 +163,9 @@ function Contact() {
                   >
                     {/* telegram----- */}
                     <Link to='https://t.me/ashwinsunuwar' target="_blank">
-                    <button className="dark:bg-blue-400 w-full bg-slate-900 duration-200">
-                      <div className="bg-blue-400 dark:bg-slate-900 dark:border-blue-400 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
-                        <div className="dark:text-blue-400 mr-4 flex items-center justify-center">
+                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200">
+                      <div className="bg-slate-900 dark:bg-blue-400/80 dark:border-slate-900 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
+                        <div className="dark:text-slate-900 mr-4 flex items-center justify-center">
                           <div className="w-10 h-10">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ function Contact() {
                             </svg>
                           </div>
                         </div>
-                        <h4 className="dark:text-blue-400 duration-200">
+                        <h4 className="dark:text-slate-900 duration-200">
                           <div className="flex justify-start items-center">
                             Telegram
                           </div>
@@ -208,8 +208,8 @@ function Contact() {
                     {/* whatsapp-------- */}
 
                     <Link to='https://call.whatsapp.com/voice/21IqNBP9Iq4U8sn1MuBF2o' target="_blank">
-                    <button className="dark:bg-green-400 w-full bg-slate-900 duration-200 mt-6">
-                      <div className="bg-green-400 dark:bg-slate-900 dark:border-green-400 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
+                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200 mt-6">
+                      <div className="bg-green-400/80 dark:bg-green-400/80 dark:border-slate-900 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
                         <div className="dark:text-blue-400 mr-4 flex items-center justify-center">
                           <div className="w-10 h-10">
                           <svg width="2.5em" height="2.5em" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -226,7 +226,7 @@ function Contact() {
 </svg>
                           </div>
                         </div>
-                        <h4 className="dark:text-green-400 duration-200">
+                        <h4 className="dark:text-slate-900 duration-200">
                           <div className="flex justify-start items-center">
                             Whatsapp
                           </div>
@@ -238,7 +238,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
+            <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mt-8 md:mt-0">
               <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mb-6">
