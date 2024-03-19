@@ -1,6 +1,7 @@
 import React from "react";
 import me from "../assets/images/me.png";
 import "./compo.css"
+import {Link} from "react-router-dom"
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
       
                
           
-<div className="bg-white relative   flex items-center  n justify-center overflow-hidden z-50 ">
+<div className="bg-primary relative   flex items-center  n justify-center overflow-hidden z-50 ">
      
     <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         <div className="flex flex-col items-center justify-between lg:flex-row py-16">
@@ -17,25 +18,24 @@ function About() {
                     <img src="https://source.unsplash.com/random" className="w-36 z-0  h-full    object-fill fill-y text-y   "/>
                 </div>
                 <div className="lg:max-w-xl lg:pr-5 relative z-40">
-                    <p className="flex text-sm uppercase text-g1  animate-toTop1">
+                    <p className="flex text-sm uppercase text-g1  animate-toTop1 font-montserrat">
                          
                         About Me
                     </p>
                     <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-5xl sm:leading-snug animate-toTop2">
                         I am Ashwin Sunuwar
-                        <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-5xl animate__animated animate__flash">Computer Engineer</span>
+                        <span className="my-1 inline-block border-b-8 border-g4 bg-primary px-4 font-bold text-5xl animate__animated animate__flash">Computer Engineer</span>
                     </h2>
-                    <p className="text-base text-gray-700 animate-toTop3">who is passionate about technology and innovation.  <br/><br/> I'm from Sindhuli, Nepal. Committed to lifelong learning
+                    <p className="text-base text-gray-700 animate-toTop3 font-montserrat">who is passionate about technology and innovation.  <br/><br/> I'm from Sindhuli, Nepal. Committed to lifelong learning
                 and eager to contribute to meaningful projects.</p>
-                    <div className="mt-10 flex flex-col items-center md:flex-row">
-                        <a href="/" className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-green-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto animate-toTop4">
-                            View More</a>
-                        <a href="/" aria-label="" className="group inline-flex items-center font-semibold text-g1 animate-toTop5">Watch how
-                            it works
+                    <div className="mt-10 flex flex-col items-center md:flex-row font-montserrat">
+                        <Link to="/contact" className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-green-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto animate-toTop4">
+                            Contact me</Link>
+                        <Link to="/posts" aria-label="" className="group inline-flex items-center font-semibold text-g1 animate-toTop5">Watch my works
                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 

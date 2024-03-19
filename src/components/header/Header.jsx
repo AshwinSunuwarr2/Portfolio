@@ -4,6 +4,7 @@ import { Logo } from "../index";
 import Mobilemenu from "./Mobilemenu";
 import "./index"
 
+
 import {
   PiInstagramLogoLight,
   PiLinkedinLogo,
@@ -13,9 +14,9 @@ import {
 import { SiGmail } from "react-icons/si";
 function Header() {
   return (
-    <header className="sticky top-0 z-[999]">
+    <header className="sticky top-0 z-[999] font-montserrat">
       <nav>
-        <div className="flex justify-around items-center bg-white/50 px-2 backdrop-blur-lg shadow-md h-24 m-auto">
+        <div className="flex justify-around items-center bg-[#ffe7bf91] px-2 backdrop-blur-lg shadow-md h-24 m-auto">
           <Link
             to="/"
             className="hidden sm:flex justify-center "
@@ -32,7 +33,7 @@ function Header() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                    `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
@@ -44,7 +45,7 @@ function Header() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                    `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
@@ -56,7 +57,7 @@ function Header() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                    `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
@@ -68,7 +69,7 @@ function Header() {
                 <NavLink
                   to="/posts"
                   className={({ isActive }) =>
-                    `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                    `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                       isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                     } `
                   }
@@ -92,7 +93,7 @@ function Header() {
 
               <div className="hidden md:flex gap-3">
                 <button
-                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -104,7 +105,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -116,7 +117,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>
@@ -130,7 +131,7 @@ function Header() {
                   </span>
                 </button>
                 <button
-                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                   type="button"
                   data-ripple-light="true"
                   onClick={() =>

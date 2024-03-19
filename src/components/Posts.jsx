@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 function Posts() {
   return (
-    <div className=" min-h-screen overflow-y-auto bi-sliders2-vertical">
+    <div className=" min-h-screen overflow-y-auto bi-sliders2-vertical bg-primary">
       <div className="projects">
         <Projects/>
       </div>

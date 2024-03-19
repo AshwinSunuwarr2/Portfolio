@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 function Footer() {
   return (
     <footer>
-      <div className="flex flex-row items-center justify-between bg-white/75 text-green-900/80 py-4 lg:pl-16 shadow-t-sm shadow-inner shadow-black/15 ">
+      <div className="flex flex-row items-center justify-between bg-[#ffe7bf91] text-green-900/80 py-4 lg:pl-16 shadow-t-sm shadow-inner shadow-black/15 font-montserrat">
         <Link to="/" className="flex justify-center m-2">
           <Logo className="  object-contain p-4" />
         </Link>
@@ -21,7 +21,7 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100  ${
+                      `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100  ${
                         isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                       }`
                     }
@@ -33,7 +33,7 @@ function Footer() {
                 <li>
                   <NavLink
                     className={({ isActive }) =>
-                      `duration-200 relative inline cursor-pointer text-[18px] font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
+                      `duration-200 relative inline cursor-pointer text-md font-small before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 ${
                         isActive ?  "text-[#E21412]" : "text-[#000000a2]"
                       }`
                     }

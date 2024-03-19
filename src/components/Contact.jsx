@@ -71,12 +71,12 @@ function Contact() {
   const { register, handleSubmit } = useForm();
   return (
     <>
-      <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-4">
+      <section className="py-20 lg:py-[120px] overflow-hidden relative z-10 px-4 bg-primary font-montserrat">
         <div className="container">
           <div className="flex flex-wrap lg:justify-between -mx-4">
             <div className="w-full lg:w-1/2 xl:w-6/12 px-4">
               <div className="max-w-[570px] mb-12 lg:mb-0 m-auto">
-                <span className="block mb-4 text-base text-primary font-semibold">
+                <span className="block mb-4 text-base text-primary font-semibold animate-rtl1">
                   Contact Me
                 </span>
                 <h2
@@ -89,11 +89,12 @@ function Contact() {
                   sm:text-[40px]
                   lg:text-[36px]
                   xl:text-[40px]
+                  animate-rtl2
                   "
                 >
                   GET IN TOUCH WITH ME
                 </h2>
-                <p className="text-base text-body-color leading-relaxed mb-9">
+                <p className="text-base text-body-color leading-relaxed mb-9 animate-rtl4">
                   Feel free to drop me a message if you have any questions,
                   inquiries, or just want to say hello. I'm always open to new
                   opportunities, collaborations, and discussions. Looking
@@ -103,7 +104,7 @@ function Contact() {
 
                 <div className="md:hidden sm:flex gap-3">
                   <button
-                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-pink-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2 animate-toTop1"
                     type="button"
                     data-ripple-light="true"
                     onClick={() =>
@@ -115,7 +116,7 @@ function Contact() {
                     </span>
                   </button>
                   <button
-                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-red-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2 animate-toTop2"
                     type="button"
                     data-ripple-light="true"
                     onClick={() =>
@@ -127,7 +128,7 @@ function Contact() {
                     </span>
                   </button>
                   <button
-                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2"
+                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-green-500 text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mr-2 animate-toTop3"
                     type="button"
                     data-ripple-light="true"
                     onClick={() =>
@@ -141,7 +142,7 @@ function Contact() {
                     </span>
                   </button>
                   <button
-                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-amber-500 text-center font-sans text-xs font-medium uppercase text-black shadow-md shadow-amber-500/20 transition-all hover:shadow-lg hover:shadow-amber-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none animate-toTop4"
                     type="button"
                     data-ripple-light="true"
                     onClick={() =>
@@ -163,7 +164,7 @@ function Contact() {
                   >
                     {/* telegram----- */}
                     <Link to='https://t.me/ashwinsunuwar' target="_blank">
-                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200">
+                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200 animate-toTop3">
                       <div className="bg-slate-900 dark:bg-blue-400/80 dark:border-slate-900 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
                         <div className="dark:text-slate-900 mr-4 flex items-center justify-center">
                           <div className="w-10 h-10">
@@ -208,7 +209,7 @@ function Contact() {
                     {/* whatsapp-------- */}
 
                     <Link to='https://call.whatsapp.com/voice/21IqNBP9Iq4U8sn1MuBF2o' target="_blank">
-                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200 mt-6">
+                    <button className="dark:bg-slate-900 w-full bg-slate-900 duration-200 mt-6 animate-toTop5">
                       <div className="bg-green-400/80 dark:bg-green-400/80 dark:border-slate-900 active:translate-x-0 active:translate-y-0 flex items-center border-slate-900 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 w-full">
                         <div className="dark:text-blue-400 mr-4 flex items-center justify-center">
                           <div className="w-10 h-10">
@@ -238,8 +239,8 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mt-8 md:mt-0">
-              <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+            <div className="w-full lg:w-1/2 xl:w-5/12 px-4 mt-8 md:mt-0 animate-ltr">
+              <div className="bg-[#f9f3d7] relative rounded-lg p-8 sm:p-12 shadow-lg">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mb-6">
                     <input
