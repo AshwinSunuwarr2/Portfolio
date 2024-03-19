@@ -1,0 +1,62 @@
+import React from "react";
+
+function Work() {
+  return (
+    <div className="container mx-auto px-4 md:px-16">
+      <h2 className="text-4xl font-bold mb-8 text-center animate-rtl3 font-montserrat">
+        💼 Work
+      </h2>
+
+      <div
+        className="mb-4 md:mb-0 w-full max-w-screen-lg mx-auto relative"
+        style={{ height: "24em" }}
+      >
+        <div
+          className="absolute left-0 bottom-0 w-full h-full z-10"
+          style={{
+            "background-image":
+              "linear-gradient(180deg,transparent,rgba(0,0,0,.7))",
+          }}
+        ></div>
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          className="absolute left-0 top-0 w-full h-full z-0 object-cover"
+        />
+        <div className="p-4 absolute bottom-0 left-0 z-20">
+          <a
+            href="#"
+            className="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2"
+          >
+            Intern
+          </a>
+          <h2 className="text-4xl font-semibold text-gray-100 leading-tight">
+            Front-End Developer(React & Wordpress)
+          </h2>
+          <div className="flex mt-3">
+            
+            <div>
+              <p className="font-semibold text-gray-200 text-sm">
+                {" "}
+                🏢 @Yoddha Lab Pvt. Ltd{" "}
+              </p>
+              <p className="font-semibold text-gray-400 text-xs"> Jan 2024 - Mar 2024 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-lg mx-auto text-lg leading-relaxed">
+       
+
+        <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+          I worked as a Front-End Developer at Yoddha Lab Pvt. Ltd. for 3-months. There I got the chance to enhance my skillset to another level.
+          I've worked on multiple projects and gained valuable experience.
+        </div>
+
+        
+      </div>
+    </div>
+  );
+}
+
+export default Work;

@@ -12,6 +12,7 @@ import HoverCard from "./HoverCard";
 import Edu from "./Edu";
 import Projects from "./Projects";
 import Mobilemenu from "./header/Mobilemenu";
+import Work from "./Work";
 
 export {
   Header,
@@ -27,5 +28,6 @@ export {
   HoverCard,
   Edu,
   Projects,
-  Mobilemenu
+  Mobilemenu,
+  Work
 };
