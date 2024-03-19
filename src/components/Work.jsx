@@ -1,15 +1,16 @@
 import React from "react";
+import working from "../assets/images/working.png";
 
 function Work() {
   return (
     <div className="container mx-auto px-4 md:px-16">
       <h2 className="text-4xl font-bold mb-8 text-center animate-rtl3 font-montserrat">
-        💼 Work
+        💼 Work Experience
       </h2>
 
       <div
         className="mb-4 md:mb-0 w-full max-w-screen-lg mx-auto relative"
-        style={{ height: "24em" }}
+        style={{ height: "16em" }}
       >
         <div
           className="absolute left-0 bottom-0 w-full h-full z-10"
@@ -19,7 +20,7 @@ function Work() {
           }}
         ></div>
         <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={working}
           className="absolute left-0 top-0 w-full h-full z-0 object-cover"
         />
         <div className="p-4 absolute bottom-0 left-0 z-20">
