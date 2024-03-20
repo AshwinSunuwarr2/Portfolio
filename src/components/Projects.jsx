@@ -3,7 +3,7 @@ import React from "react";
 function Projects() {
   return (
     <>
-      <section className="py-16">
+      <section>
         <div className="container mx-auto px-4 md:px-16">
           <h2 className="text-4xl font-bold mb-8 text-center animate-rtl3 font-montserrat">
             🚀 Featured Projects

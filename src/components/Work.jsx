@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import working from "../assets/images/working.png";
 
 function Work() {
@@ -36,10 +37,10 @@ function Work() {
           <div className="flex mt-3">
             
             <div>
-              <p className="font-semibold text-gray-200 text-sm">
+              <Link to="https://yoddhalab.com/" target="_blank" className="font-semibold text-gray-200 text-sm hover:text-red-400/80">
                 {" "}
-                🏢 @Yoddha Lab Pvt. Ltd{" "}
-              </p>
+                @Yoddha Lab Pvt. Ltd{" "}
+              </Link>
               <p className="font-semibold text-gray-400 text-xs"> Jan 2024 - Mar 2024 </p>
             </div>
           </div>
@@ -49,7 +50,7 @@ function Work() {
       <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-lg mx-auto text-lg leading-relaxed">
        
 
-        <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
+        <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded max-w-[42rem]">
           I worked as a Front-End Developer at Yoddha Lab Pvt. Ltd. for 3-months. There I got the chance to enhance my skillset to another level.
           I've worked on multiple projects and gained valuable experience.
         </div>
