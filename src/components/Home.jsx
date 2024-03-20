@@ -11,8 +11,8 @@ function Home() {
             
         <div className="mx-auto text-center text-white">
           {/* <h1 className="text-5xl font-medium mb-6">Welcome to My Portfolio</h1> */}
-          <div className="flex flex-row justify-center">
-          <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=36&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=600&lines=%E2%98%98%EF%B8%8F+Welcome+to+My++Portfolio+%E2%98%98%EF%B8%8F;Love+from+Nepal++%F0%9F%8F%94%EF%B8%8F" alt="Typing SVG" /></a>
+          <div className="flex flex-row justify-center items-center">
+          <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=36&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=600&lines=%E2%98%98%EF%B8%8F+Welcome+to+My++Portfolio+%E2%98%98%EF%B8%8F;You're+Amaging+%26+Loved++%F0%9F%91%91" alt="Typing SVG" />
           </div>
           <p className="text-lg mt-4 mb-12 font-montserrat">
           I code, I design, I drink coffee🍵 (a lot), and sometimes, I even sleep! 

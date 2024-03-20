@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="min-h-80">
+      <main className="min-h-80 cursor-default">
         <Outlet />
       </main>
       <Footer />

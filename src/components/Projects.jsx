@@ -8,7 +8,7 @@ function Projects() {
           <h2 className="text-4xl font-bold mb-8 text-center animate-rtl3 font-montserrat">
             🚀 Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 animate-fadeIn5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 animate-fadeIn5 px-[11.5rem]">
             <div className="group bg-[#fbf8ea] rounded-lg shadow-md overflow-hidden font-montserrat">
               <img
                 src="https://img.freepik.com/premium-vector/blog-concept-with-isometric-view_23-2147997085.jpg?w=740"
