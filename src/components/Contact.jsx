@@ -247,7 +247,7 @@ function Contact() {
                   <div className="mb-6">
                     <input
                       type="text"
-                      placeholder="Your Name"
+                      placeholder="Your Good Name"
                       className="
                         w-full
                         rounded
@@ -267,7 +267,7 @@ function Contact() {
                   <div className="mb-6">
                     <input
                       type="email"
-                      placeholder="Your Email"
+                      placeholder="Your Precious Email"
                       className="
                         w-full
                         rounded
@@ -290,7 +290,7 @@ function Contact() {
                   <div className="mb-6">
                     <textarea
                       rows="6"
-                      placeholder="Your Message"
+                      placeholder="What Shall I Do For You"
                       className="
                         w-full
                         rounded
