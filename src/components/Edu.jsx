@@ -5,7 +5,7 @@ function Edu() {
     <>
 <div className="w-full px-4 text-black font-montserrat">
 	<div className="tree-wrapper lg:w-full min-h-[50vh] lg:mx-auto ">
-		<h2 className='text-4xl font-bold text-center subpixel-antialiased mb-8 min-w-max animate-toTop1'>🎓 Education 🎓</h2>
+		<h2 className='text-4xl font-bold text-center subpixel-antialiased mb-8 min-w-max animate-toTop1'>🎓 Education </h2>
 		<div
 			className="flex lg:flex-row flex-col lg:items-center lg:gap-2 group  relative top-0 xl:left-1/6 xl:right-1/6 xl:even:translate-x-[50%] even:translate-x-0 lg:w-max w-full z-[1]">
 			<div
@@ -17,7 +17,7 @@ function Edu() {
 				<div className="location">Balkumari, Lalitpur</div>
 				<div className="starting-year">2018</div>
 				<div className="graduation-year">2023</div>
-				<div className="description">I have gathered as much computer-related knowledge as possible within this short period of time.</div>
+				<div className="description">Throughout my bachelor's journey, I have accumulated a comprehensive understanding of computer-related topics.</div>
 				<div className="result"></div>
 			</div>
 		</div>
@@ -32,7 +32,7 @@ function Edu() {
 				<div className="location">Balkumari, Lalitpur</div>
 				<div className="starting-year">2016</div>
 				<div className="graduation-year">2018</div>
-				<div className="description">I chosen Science as my subject randomly. Later, I started to get interested in techie stuff.</div>
+				<div className="description">I had a strong passion for science and took it as my major in +2. Later, I started to get interested in techie stuff.</div>
 				<div className="result"></div>
 			</div>
 		</div>

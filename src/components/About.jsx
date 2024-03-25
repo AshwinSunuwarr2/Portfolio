@@ -42,7 +42,7 @@ function About() {
                 
                
             </div>
-            <div className="relative lg:ml-32 lg:block lg:w-1/2 order-1">
+            <div className="relative lg:ml-32 lg:block lg:w-1/2 order-1 mt-4">
             
                 <div className="animate-ltr duration-500 ease-in-out abg-orange-400 mx-auto w-fit overflow-hidden rounded-[10rem] rounded-br-none rounded-tl-none m-2">
                      <img src={me} alt="" className="size-[350px] md:w-[400px] md:h-[500px] object-cover"/>
