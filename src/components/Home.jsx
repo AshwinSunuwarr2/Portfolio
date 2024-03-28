@@ -4,26 +4,17 @@ import { useNavigate, Link } from "react-router-dom";
 
 import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+
+import { loadSlim } from "@tsparticles/slim";
 
 
 function Home() {
   // particles
   const [ init, setInit ] = useState(false);
-
-    // this should be run only once per application lifetime
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-            // starting from v2 you can add only the features you need reducing the bundle size
-            //await loadAll(engine);
-            //await loadFull(engine);
+
             await loadSlim(engine);
-            //await loadBasic(engine);
         }).then(() => {
             setInit(true);
         });
@@ -32,7 +23,6 @@ function Home() {
     const particlesLoaded = (container) => {
         console.log(container);
     };
-
 
 
   // not particles
@@ -114,14 +104,14 @@ function Home() {
             
 />
 }
-          <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-[url(https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?t=st=1710396910~exp=1710400510~hmac=c9afba45ba1145ff467fd76585ff998c59e56d76bb0a8968d860e5c42bb3fc7d&w=1060)] bg-blend-darken">
+          <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-[url(https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?t=st=1710396910~exp=1710400510~hmac=c9afba45ba1145ff467fd76585ff998c59e56d76bb0a8968d860e5c42bb3fc7d&w=1060)] bg-blend-darken h-[50%]">
             
         <div className="mx-auto text-center text-white">
           {/* <h1 className="text-5xl font-medium mb-6">Welcome to My Portfolio</h1> */}
           <div className="flex flex-row justify-center items-center">
           <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=36&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=600&lines=%E2%98%98%EF%B8%8F+Welcome+to+My++Portfolio+%E2%98%98%EF%B8%8F;You're+Amaging+%26+Loved++%F0%9F%91%91" alt="Typing SVG" />
           </div>
-          <p className="text-lg mt-4 mb-12 font-montserrat">
+          <p className="text-lg mt-4 mb-12 px-2 font-montserrat">
           I code, I design, I drink coffee🍵 (a lot), and sometimes, I even sleep! 
           </p>
           <Link
@@ -144,7 +134,6 @@ function Home() {
           
         
     </div>
-
 
     // parallax effect -----------
     // <>
