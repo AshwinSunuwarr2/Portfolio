@@ -16,7 +16,7 @@ function About() {
             <div className=" relative order-2 md:order-1">
                 <div className=" absolute top-0 -left-48 z-0  opacity-50 animate-rtl duration-500 ease-in-out">
                     {/* <img src="https://source.unsplash.com/random" className="w-36 z-0  h-full    object-fill fill-y text-y   "/> */}
-                    <img src="public/assets/flower.jpeg" className="w-36 z-0  h-full    object-fill fill-y text-y   "/>
+                    <img src="/assets/flower.jpeg" className="w-36 z-0  h-full    object-fill fill-y text-y   "/>
                 </div>
                 <div className="lg:max-w-xl lg:pr-5 relative z-40">
                     <p className="flex text-sm uppercase text-g1  animate-toTop1 font-montserrat">

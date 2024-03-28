@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 function Footer() {
   return (
     <footer>
-      <div className="flex flex-row items-center justify-between bg-[#ffe7bf91] text-green-900/80 py-4 lg:pl-16 shadow-t-sm shadow-inner shadow-black/15 font-montserrat">
+      <div className="flex flex-row items-center justify-between bg-[#ffe8bfed] text-green-900/80 py-4 lg:pl-16 shadow-t-sm shadow-inner shadow-black/15 font-montserrat">
         <Link to="#" className="flex justify-center m-2">
           <Logo className="  object-contain p-4" />
         </Link>
