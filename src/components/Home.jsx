@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 
 import { loadSlim } from "@tsparticles/slim";
@@ -28,7 +28,7 @@ function Home() {
   // not particles
   const navigate = useNavigate();
   return (
-    <div className=" flex items-center h-screen">
+    <div className="bg-[#f1ebd080] flex items-center h-screen">
       {init && <Particles className="z-[-1]"
             id="tsparticles"
             particlesLoaded={particlesLoaded}
@@ -63,10 +63,10 @@ function Home() {
                 },
                 particles: {
                     color: {
-                        value: "#F75E20",
+                        value: "#F8371D",
                     },
                     links: {
-                        color: "#F75E20",
+                        color: "#F8371D",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
