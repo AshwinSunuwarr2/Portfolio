@@ -77,13 +77,6 @@ function Header() {
                 </NavLink>
               </li>
             </ul>
-          
-{/* <main class="h-screen flex justify-center items-center">
-	<p
-		class="relative inline cursor-pointer text-xl font-medium before:bg-[#E21412]  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">
-		Hover me</p>
-
-</main> */}
 
             <div>
               
