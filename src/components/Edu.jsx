@@ -32,7 +32,7 @@ function Edu() {
 				<div className="location">Balkumari, Lalitpur</div>
 				<div className="starting-year">2016</div>
 				<div className="graduation-year">2018</div>
-				<div className="description">I had a strong passion for science and took it as my major in +2. Later, I started to get interested in techie stuff.</div>
+				<div className="description">I had a strong passion for science and took it as my major in +2. Later, I started to get interested in tech stuff.</div>
 				<div className="result"></div>
 			</div>
 		</div>
