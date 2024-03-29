@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 
 import { loadSlim } from "@tsparticles/slim";
@@ -10,15 +10,13 @@ import { loadSlim } from "@tsparticles/slim";
 
 function Home() {
   // particles
-  const [ init, setInit ] = useState(false);
-    useEffect(() => {
-        initParticlesEngine(async (engine) => {
 
-            await loadSlim(engine);
-        }).then(() => {
-            setInit(true);
-        });
-    }, []);
+    useEffect(() => {
+        const initializeParticles = async () =>{
+            await initParticlesEngine(async (engine)=> await loadSlim(engine))
+        };
+        initializeParticles();
+    },[])
 
     const particlesLoaded = (container) => {
         console.log(container);
@@ -26,10 +24,9 @@ function Home() {
 
 
   // not particles
-  const navigate = useNavigate();
   return (
     <div className="bg-[#f1ebd080] flex items-center h-screen">
-      {init && <Particles className="z-[-1]"
+     <Particles className="z-[-1]"
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
@@ -100,14 +97,11 @@ function Home() {
                     },
                 },
                 detectRetina: true,
-            }}
-            
+            }}           
 />
-}
           <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-[url(https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?t=st=1710396910~exp=1710400510~hmac=c9afba45ba1145ff467fd76585ff998c59e56d76bb0a8968d860e5c42bb3fc7d&w=1060)] bg-blend-darken h-[50%]">
             
         <div className="mx-auto text-center text-white">
-          {/* <h1 className="text-5xl font-medium mb-6">Welcome to My Portfolio</h1> */}
           <div className="flex flex-row justify-center items-center">
           <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=36&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=600&lines=%E2%98%98%EF%B8%8F+Welcome+to+My++Portfolio+%E2%98%98%EF%B8%8F;You're+Amaging+%26+Loved++%F0%9F%91%91" alt="Typing SVG" />
           </div>
