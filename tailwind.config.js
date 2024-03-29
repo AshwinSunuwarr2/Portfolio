@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         ashwin: "url(./assets/images/me.jpg)",
+        leaf: "url(/assets/leaf.avif)",
       },
       backgroundColor: {
         primary: "#d3be694f", 

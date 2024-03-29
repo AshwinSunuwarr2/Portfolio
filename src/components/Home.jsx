@@ -18,9 +18,9 @@ function Home() {
         initializeParticles();
     },[])
 
-    const particlesLoaded = (container) => {
-        console.log(container);
-    };
+    // const particlesLoaded = (container) => {
+    //     console.log(container);
+    // };
 
 
   // not particles
@@ -28,7 +28,7 @@ function Home() {
     <div className="bg-[#f1ebd080] flex items-center h-screen">
      <Particles className="z-[-1]"
             id="tsparticles"
-            particlesLoaded={particlesLoaded}
+            // particlesLoaded={particlesLoaded}
             options={{
                 background: {
                     color: {
@@ -99,7 +99,7 @@ function Home() {
                 detectRetina: true,
             }}           
 />
-          <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-[url(https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?t=st=1710396910~exp=1710400510~hmac=c9afba45ba1145ff467fd76585ff998c59e56d76bb0a8968d860e5c42bb3fc7d&w=1060)] bg-blend-darken h-[50%]">
+          <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-leaf bg-blend-darken h-[50%]">
             
         <div className="mx-auto text-center text-white">
           <div className="flex flex-row justify-center items-center">
