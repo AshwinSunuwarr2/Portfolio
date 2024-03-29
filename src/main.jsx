@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, About, Contact, Posts, Login, Register, FormSubmissionPage } from "./components";
+import { Home, About, Contact, Posts } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -26,20 +26,8 @@ const router = createBrowserRouter([
         path: "/posts",
         element: <Posts />,
       },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
     ],
   },
-  {
-    path: "/thankyou",
-    element: <FormSubmissionPage/>
-  }
 
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
