@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, About, Contact, Posts } from "./components";
+import { Home, About, Contact, Posts, ParallaxAbout } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/summary",
+    element: <ParallaxAbout />,
+  }
 
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

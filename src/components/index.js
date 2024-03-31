@@ -10,10 +10,12 @@ import Edu from "./Edu";
 import Projects from "./Projects";
 import Mobilemenu from "./header/Mobilemenu";
 import Work from "./Work";
+import ParallaxAbout from "./Parallax/ParallaxAbout";
 
 export {
   Header,
   Footer,
+  ParallaxAbout,
   Home,
   About,
   Contact,

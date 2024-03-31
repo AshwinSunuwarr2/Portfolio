@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        ashwin: "url(./assets/images/me.jpg)",
+        ashwin: "url(/assets/images/me.png)",
         leaf: "url(/assets/leaf.avif)",
       },
       backgroundColor: {
