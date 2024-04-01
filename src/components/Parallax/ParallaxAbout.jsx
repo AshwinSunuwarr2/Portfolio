@@ -85,7 +85,7 @@ const ParallaxAbout = () => {
                 </button>
               </div>
 
-              <ParallaxLayer offset={0.6} speed={0.5}>
+              <ParallaxLayer offset={0.6} speed={0.4}>
                 <div className="flex flex-col items-start justify-center sm:backdrop-blur-sm lg:backdrop-blur-0">
                   <h1
                     className="text-start text-[1rem] md:text-[4rem] 
