@@ -27,7 +27,7 @@ const ParallaxAbout = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1}></ParallaxLayer>
-        <ParallaxLayer offset={1.2}>
+        <ParallaxLayer offset={1.1}>
           <div className="flex flex-col-reverse md:flex-row justify-between">
             <div className="flex flex-grow">
               {/* socials-------- */}
@@ -85,8 +85,8 @@ const ParallaxAbout = () => {
                 </button>
               </div>
 
-              <ParallaxLayer offset={0.6} speed={0.4}>
-                <div className="flex flex-col items-start justify-center sm:backdrop-blur-sm lg:backdrop-blur-0">
+              <ParallaxLayer offset={0.1}>
+                <div className="flex flex-col sm:backdrop-blur-sm lg:backdrop-blur-0 lg:mt-10">
                   <h1
                     className="text-start text-[1rem] md:text-[4rem] 
            font-bold font-montserrat leading-wider tracking-wider text-[#7b7554] drop-shadow-[8px_8px_5px_#00000093] ml-14"
@@ -102,26 +102,28 @@ const ParallaxAbout = () => {
                     Computer Engineer
                     <br />
                     Email -&nbsp;
-                    <Link
-                      to="mailto:ashwinsunuwarr2@gmail.com"
+                    <a
+                      href='mailto:ashwinsunuwarr2@gmail.com'
                       className="underline"
                     >
                       ashwinsunuwarr2@gmail.com
-                    </Link>
+                    </a>
                   </p>
                 </div>
               </ParallaxLayer>
             </div>
 
-            <div className="relative lg:mr-10 z-[-1] ">
+            <ParallaxLayer offset={0.3} speed={0.2}>
+            <div className="absolute md:right-0 top-[30%] md:top-10 mr-4">
               <img
                 src={me}
                 alt="me"
-                width={400}
-                className="rounded-full aspect-[1/1] object-cover shadow-[0px_0px_14px_8px_#7b7554] shadow-[#00000039]"
+                
+                className="w-[250px] xl:w-[400px] rounded-full aspect-[1/1] object-cover object-center shadow-[0px_0px_14px_8px_#7b7554] shadow-[#00000039] ml-10 md:ml-0"
               />
-              <div className="absolute top-0 left-0 bg-[#0000003e] w-full h-full rounded-full "></div>
+              <div className="absolute w-[250px] xl:w-[400px] top-0 left-0 bg-[#0000004c] hover:bg-[#0000001f] transition-all transition-1000 ease-in h-full rounded-full ml-10 md:ml-0"></div>
             </div>
+            </ParallaxLayer>
           </div>
         </ParallaxLayer>
 
