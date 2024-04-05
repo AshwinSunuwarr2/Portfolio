@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import "./Parallax.css";
 
 import me from "../../assets/images/me.png";
 import "../compo.css";
@@ -16,23 +17,25 @@ const ParallaxAbout = () => {
   return (
     <>
       <Parallax pages={4} className="bg-[#2f2f2f]">
-        <ParallaxLayer offset={0} className="bg-[#7b7554]"></ParallaxLayer>
-        <ParallaxLayer offset={0.2} speed={0.5}>
+        <ParallaxLayer offset={0} className="bg-[#0d0d0d]"></ParallaxLayer>
+        <ParallaxLayer offset={0.2} speed={0.5} className="">
           <h1
-            className="text-center text-[4rem] md:text-[8rem] 
-           font-bold font-montserrat leading-wider tracking-wider text-[#89825e] drop-shadow-[8px_8px_5px_#00000052] inset-1"
+            className="first-heading text-center text-[4rem] md:text-[6rem] 
+           font-bold font-montserrat leading-wider tracking-[0.1em]"
           >
-            Greetings! Lorem Ipsum daily
+            Greetings!
+            <br /> Welcome to my <br />
+            Website.
           </h1>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1}></ParallaxLayer>
-        <ParallaxLayer offset={1.1}>
-          <div className="flex flex-col-reverse md:flex-row justify-between">
-            <div className="flex flex-grow">
+        <ParallaxLayer offset={1.1} speed={0.2}>
+          <div className="flex flex-col md:flex-row justify-between flex-wrap px-4">
+            
               {/* socials-------- */}
 
-              <div className="flex flex-row gap-5 ml-4">
+              <div className="flex flex-row gap-5 ml-4 w-full">
                 <button
                   className="middle none relative h-10 max-h-[35px] w-10 max-w-[35px] rounded-lg bg-[#2f2f2f] text-center font-sans text-xs font-medium uppercase text-white shadow-md shadow-[#7b7554ba] transition-all hover:shadow-lg hover:shadow-[#7b7554] focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:scale-105"
                   type="button"
@@ -84,60 +87,99 @@ const ParallaxAbout = () => {
                   </span>
                 </button>
               </div>
+            
 
-              <ParallaxLayer offset={0.1}>
-                <div className="flex flex-col sm:backdrop-blur-sm lg:backdrop-blur-0 lg:mt-10">
-                  <h1
-                    className="text-start text-[1rem] md:text-[4rem] 
-           font-bold font-montserrat leading-wider tracking-wider text-[#7b7554] drop-shadow-[8px_8px_5px_#00000093] ml-14"
+            <div className="flex flex-col md:flex-row justify-around items-center w-full m-auto mt-14 md:mt-0 gap-5 md:gap-2">
+              <div className="flex flex-col">
+                <h1
+                  className="text-start text-[2rem] md:text-[4rem] 
+           font-bold font-montserrat leading-wider tracking-wider text-[#7b7554] drop-shadow-[8px_8px_5px_#00000093]"
+                >
+                  Ashwin Sunuwar <br />
+                  <span className="text-[3rem]">Computer Engineer</span>
+                </h1>
+                <p
+                  className="text-start text-[1rem] md:text-[2rem] 
+           font-medium font-montserrat leading-wider tracking-wider text-[#7b7554] drop-shadow-[8px_8px_5px_#00000093]"
+                >
+                  From Sindhuli, Nepal <br />
+                  Lalitpur, current <br />
+                  Computer Engineer
+                  <br />
+                  <a
+                    href="mailto:ashwinsunuwarr2@gmail.com"
+                    className="underline z-[999] hover:text-white/50"
                   >
-                    Er. Ashwin Sunuwar
-                  </h1>
-                  <p
-                    className="text-start text-[1rem] md:text-[2rem] 
-           font-medium font-montserrat leading-wider tracking-wider text-[#7b7554] drop-shadow-[8px_8px_5px_#00000093] ml-14"
-                  >
-                    From Sindhuli, Nepal <br />
-                    Lalitpur, current <br />
-                    Computer Engineer
-                    <br />
-                    Email -&nbsp;
-                    <a
-                      href='mailto:ashwinsunuwarr2@gmail.com'
-                      className="underline"
-                    >
-                      ashwinsunuwarr2@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </ParallaxLayer>
-            </div>
+                    ashwinsunuwarr2@gmail.com
+                  </a>
+                </p>
+              </div>
 
-            <ParallaxLayer offset={0.3} speed={0.2}>
-            <div className="absolute md:right-0 top-[30%] md:top-10 mr-4">
-              <img
-                src={me}
-                alt="me"
-                
-                className="w-[250px] xl:w-[400px] rounded-full aspect-[1/1] object-cover object-center shadow-[0px_0px_14px_8px_#7b7554] shadow-[#00000039] ml-10 md:ml-0"
-              />
-              <div className="absolute w-[250px] xl:w-[400px] top-0 left-0 bg-[#0000004c] hover:bg-[#0000001f] transition-all transition-1000 ease-in h-full rounded-full ml-10 md:ml-0"></div>
+              <div className="relative flex mt-10 ">
+                <img
+                  src={me}
+                  alt="me"
+                  className="w-[300px] xl:w-[400px] rounded-full aspect-[1/1] object-cover object-center shadow-[0px_0px_14px_8px_#7b7554] shadow-[#00000039]"
+                />
+                <div className="absolute w-[300px] xl:w-[400px] top-0 bg-[#0000004c] hover:bg-[#0000001f] transition-all transition-1000 ease-in h-full rounded-full"></div>
+              </div>
             </div>
-            </ParallaxLayer>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} factor={2} speed={0.2}>
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="exp-bg" className="relative opacity-[0.2]"/>
-        
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.2} >
-        <h1
-                    className="text-start text-[1rem] md:text-[4rem] 
+        {/* <ParallaxLayer offset={2} factor={2} speed={0.1}>
+          <img
+            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="exp-bg"
+            className="relative opacity-[0.2]"
+          />
+        </ParallaxLayer> */}
+        <ParallaxLayer
+          offset={2}
+          className="flex flex-col md:flex-row justify-center items-center bg-red-400"
+        >
+          {/* <div className=""> */}
+          <div className="">
+            <h1
+              className="text-[1rem] md:text-[2rem] lg:text-[4rem] 
            font-bold font-montserrat leading-wider tracking-wider text-[#a29a70] drop-shadow-[8px_8px_5px_#00000093] ml-14"
-                  >
-                    Experiences
-                  </h1>
+            >
+              Experiences
+            </h1>
+            <h2 className="text">
+              Front-end Developer -{" "}
+              <span className="text-[#7b7554]">Intern</span>
+            </h2>
+            <p>@Yoddha Lab Pvt. Ltd.</p>
+
+            <h2>Projects</h2>
+            <Link to="https://github.com/AshwinSunuwarr2">@GitHub</Link>
+            <ul>
+              <li>Criminal Face Recognition System</li>
+              <li>Social APP</li>
+              <li>FreeL</li>
+              <li>NewsBud</li>
+              <li>Miscellaneous</li>
+            </ul>
+          </div>
+          <div>
+            <h1
+              className=" text-start text-[1rem] md:text-[2rem] lg:text-[4rem]  
+           font-bold font-montserrat leading-wider tracking-wider text-[#a29a70] drop-shadow-[8px_8px_5px_#00000093] ml-14 "
+            >
+              Expertise
+            </h1>
+            <ul className="sm:ml-8 lg:ml-2">
+              <li>ReactJs</li>
+              <li>Tailwind CSS</li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>MySQL</li>
+              <li>Appwrite</li>
+            </ul>
+          </div>
+          {/* </div> */}
         </ParallaxLayer>
       </Parallax>
     </>
