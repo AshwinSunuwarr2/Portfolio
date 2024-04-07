@@ -13,6 +13,7 @@ import {
 } from "react-icons/pi";
 
 import { SiGmail } from "react-icons/si";
+import Projects from "../Projects";
 const ParallaxAbout = () => {
   return (
     <>
@@ -127,16 +128,9 @@ const ParallaxAbout = () => {
           </div>
         </ParallaxLayer>
 
-        {/* <ParallaxLayer offset={2} factor={2} speed={0.1}>
-          <img
-            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="exp-bg"
-            className="relative opacity-[0.2]"
-          />
-        </ParallaxLayer> */}
         <ParallaxLayer
           offset={2}
-          className="flex flex-col md:flex-row justify-center items-center bg-red-400"
+          className="flex flex-col md:flex-row justify-around items-center bg-orange-600/45"
         >
           {/* <div className=""> */}
           <div className="">
@@ -144,40 +138,21 @@ const ParallaxAbout = () => {
               className="text-[1rem] md:text-[2rem] lg:text-[4rem] 
            font-bold font-montserrat leading-wider tracking-wider text-[#a29a70] drop-shadow-[8px_8px_5px_#00000093] ml-14"
             >
-              Experiences
+              Experience
             </h1>
-            <h2 className="text">
+            <h2 className="text-[2rem] font-bold font-montserrat">
               Front-end Developer -{" "}
-              <span className="text-[#7b7554]">Intern</span>
+              <span className="text-[#7b7554] font-medium text-[1.5rem]">Intern</span>
             </h2>
-            <p>@Yoddha Lab Pvt. Ltd.</p>
-
-            <h2>Projects</h2>
-            <Link to="https://github.com/AshwinSunuwarr2">@GitHub</Link>
-            <ul>
-              <li>Criminal Face Recognition System</li>
-              <li>Social APP</li>
-              <li>FreeL</li>
-              <li>NewsBud</li>
-              <li>Miscellaneous</li>
-            </ul>
+            <Link to="https://yoddhalab.com/" target="_blank" className="font-montserrat hover:text-white/50">@Yoddha Lab Pvt. Ltd.</Link>
+            <p className="m-2 text-lg font-montserrat">Got chance to learn more about React and WrodPress. <br/>Built interactive websites with responsive UI.</p><hr />
+            
+            <div className="projects overflow-hidden max-h-screen">
+                
+            </div>
           </div>
           <div>
-            <h1
-              className=" text-start text-[1rem] md:text-[2rem] lg:text-[4rem]  
-           font-bold font-montserrat leading-wider tracking-wider text-[#a29a70] drop-shadow-[8px_8px_5px_#00000093] ml-14 "
-            >
-              Expertise
-            </h1>
-            <ul className="sm:ml-8 lg:ml-2">
-              <li>ReactJs</li>
-              <li>Tailwind CSS</li>
-              <li>Javascript</li>
-              <li>Python</li>
-              <li>Django</li>
-              <li>MySQL</li>
-              <li>Appwrite</li>
-            </ul>
+            react
           </div>
           {/* </div> */}
         </ParallaxLayer>
