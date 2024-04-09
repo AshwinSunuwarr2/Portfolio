@@ -1,38 +1,39 @@
 export const pyCons = [
     {
         name: "React",
-        ico: "react",
+        ico: "public/assets/techs/react.svg",
     },
     {
         name: "Wordpress",
-        ico: "wordpress",
+        ico: "public/assets/techs/wordpress.svg",
     },
     {
         name: "Python",
-        ico: "python",
+        ico: "public/assets/techs/python.svg",
     },
     {
-        name: "Tailwind",
-        ico: "tailwind",
+        name: "Tailwind CSS",
+        ico: "public/assets/techs/tailwind.svg",
     },
     {
         name: "Javascript",
-        ico: "javascript",
+        ico: "public/assets/techs/js.svg",
     },
     {
         name: "Bootstrap",
-        ico: "bootstrap",
+        ico: "public/assets/techs/bootstrap.svg",
     },
     {
         name: "MySQL",
-        ico: "mysql",
+        ico: "public/assets/techs/mysql.svg",
     },
     {
         name: "Git",
-        ico: "git",
+        ico: "public/assets/techs/git.svg",
     },
+   
     {
-        name: "Appwrite",
-        ico: "appwrite",
+        name: "Django",
+        ico: "public/assets/techs/django.svg",
     }
 ]
