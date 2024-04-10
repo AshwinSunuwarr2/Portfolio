@@ -32,7 +32,7 @@ function Projects() {
                   -React, JS, Vite, Appwrite, RTK...
                 </p>
                 <Link
-                  to="https://github.com/AshwinSunuwarr2/production-grade-project.git"
+                  to="https://github.com/AshwinSunuwarr2/Blog-appwrite.git"
                   target="_blank"
                   className="block text-blue-600 hover:underline mt-4"
                 >
