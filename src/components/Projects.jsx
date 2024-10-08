@@ -112,11 +112,11 @@ function Projects() {
                   I got opportunities to work on following websites
                 </p>
                 <Link
-                  to="https://nepaliflimcampus.acsskillsassessment.com/"
+                  to="https://brasserieperfect.be/"
                   target="_blank"
                   className="block text-blue-600 hover:underline mt-4"
                 >
-                  Nepal Film Campus 🚀
+                  Brasseri Perfect 🚀
                 </Link>
                 <Link
                   to="https://superassignmenthelp.com/"
@@ -124,6 +124,13 @@ function Projects() {
                   className="block text-blue-600 hover:underline mt-4"
                 >
                   Super Assignment Help 🚀
+                </Link>
+                <Link
+                  to="https://aashafamilygroup.com/"
+                  target="_blank"
+                  className="block text-blue-600 hover:underline mt-4"
+                >
+                  Aasha Family Group 🚀
                 </Link>
               </div>
             </div>
