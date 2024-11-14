@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="bg-[#f1ebd080] flex items-center h-screen">
       <Reactparticles/>
-      <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-leaf bg-blend-darken h-[50%]">
+      <section className="z-99 w-full bg-no-repeat bg-cover bg-fixed bg-center py-32 bg-leaf bg-blend-darken h-[65%]">
         <div className="mx-auto text-center text-white">
           <div className="flex flex-row justify-center items-center">
             <img
